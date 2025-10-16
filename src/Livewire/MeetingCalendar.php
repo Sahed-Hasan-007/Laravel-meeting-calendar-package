@@ -29,7 +29,7 @@ class MeetingCalendar extends Component
 
     public function render()
     {
-        return view('meeting-calendar::calendar', [
+        return view('meeting-calendar::meeting-calendar', [
             'meetings' => $this->meetings,
         ]);
     }
