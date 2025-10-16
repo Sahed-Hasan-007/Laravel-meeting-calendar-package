@@ -7,6 +7,12 @@
         "laravel",
         "framework"
     ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./packages/shahed/meeting-calendar"
+        }
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.2",
@@ -14,7 +20,8 @@
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
         "livewire/flux": "^2.1.1",
-        "livewire/volt": "^1.7.0"
+        "livewire/volt": "^1.7.0",
+        "shahed/meeting-calendar": "@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

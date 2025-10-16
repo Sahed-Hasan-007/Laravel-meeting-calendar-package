@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fba4852a53fb57244229bfbfccd81668",
+    "content-hash": "9852e731eb8792f46538fa28b20a9a10",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -3779,6 +3779,39 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.9.1"
             },
             "time": "2025-09-04T20:59:21+00:00"
+        },
+        {
+            "name": "shahed/meeting-calendar",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/shahed/meeting-calendar",
+                "reference": "fb7621f9abfd8b26878d2abdc99a74cb96991d10"
+            },
+            "require": {
+                "illuminate/support": "^10.0|^11.0|^12.0",
+                "livewire/livewire": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Shahed\\MeetingCalendar\\MeetingCalendarServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Shahed\\MeetingCalendar\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A reusable Livewire meeting calendar component for Laravel 10–12.",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "symfony/clock",
@@ -9805,7 +9838,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "shahed/meeting-calendar": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

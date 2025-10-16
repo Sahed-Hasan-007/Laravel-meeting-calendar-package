@@ -1,0 +1,24 @@
+{
+    "name": "shahed/meeting-calendar",
+    "description": "A reusable Livewire meeting calendar component for Laravel 10–12.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Shahed\\MeetingCalendar\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "livewire/livewire": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shahed\\MeetingCalendar\\MeetingCalendarServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
